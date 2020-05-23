@@ -1,0 +1,79 @@
+.logo-mobile {
+  position: relative;
+  height: 2.5rem; //  width: 10%;
+  padding-left: 0.75rem;
+}
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+  .header-container {
+    height: auto !important;
+
+    .col-lg-5 {
+      padding-left: 2px !important;
+      padding-right: 2px !important;
+    }
+
+    .header-heading {
+      margin-top: 10vh !important;
+    }
+
+    .header-img-container {
+      margin-top: 2rem;
+      margin-bottom: 1.2rem;
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+
+    .header-img {
+      position: relative !important;
+    }
+
+    .back-img {
+      max-width: 60% !important;
+      transform: translate(55%, -110%) rotateZ(45deg);
+    }
+
+    .front-img {
+      max-width: 40% !important;
+      transform: translate(120%, 70%);
+    }
+  }
+
+  .main-section-container {
+    padding-top: 48px !important;
+    padding-bottom: 4px !important;
+
+    h1 {
+      font-size: 2rem;
+      line-height: 1.2em;
+      margin-bottom: 1.6rem !important;
+    }
+
+    h2 {
+      font-size: 1.4rem !important;
+      margin-bottom: 2rem !important;
+    }
+
+    .bttn {
+      width: 100%;
+      margin-right: 15px;
+    }
+
+    .img-main {
+      width: 100% !important;
+      margin-bottom: 2.2rem !important;
+    }
+  }
+
+  .footer {
+    img {
+      width: 50% !important;
+    }
+
+    hr {
+      width: 80% !important;
+    }
+  }
+}
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {}

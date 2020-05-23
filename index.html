@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Taller de papier</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-------JQUERY------->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-------BOOTSTRAP-------->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  <!---Animate CSS--->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+
+  <!---Animation on scroll--->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!----Fonts---->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&display=swap" rel="stylesheet">
+  <!---->
+  <link rel="stylesheet" href="src/styles/css/mainstyles.css">
+  <script src="src/app.js"></script>
+</head>
+
+<body>
+  <!--============================Navigation Bar============================-->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars navbar-icon"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ml-auto">
+        <a class="nav-item nav-link mx-auto" href="#regalos">Regalos</a>
+        <a class="nav-item nav-link mx-auto" href="#tarjetas">Tarjetas</a>
+        <a class="nav-item nav-link mx-auto" href="#branding">Branding</a>
+        <a class="nav-item nav-link mx-auto" target="_blank" href="https://api.whatsapp.com/send?phone=573003003030&text=Hola!%20Quisiera%20mas%20informacion%20sobre...">Contacto <i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+    <a href="#" class="d-none d-lg-block" id="logo-link"><img class="logo" src="src\images\logo-taller-de-papier-blurred.png" data-src="src\images\logo-taller-de-papier.png" alt=""></a>
+    <a href="#" class="d-lg-none order-first"><img class="logo-mobile" src="src\images\logo-simbolo.png" alt=""></a>
+  </nav>
+
+  <!--============================Header============================-->
+  <header>
+    <div class="container-fluid header-container">
+      <div class="row justify-content-around header-row">
+        <div class="col-lg-5">
+          <div class="header-heading">
+            <h1>Regala felicidad a tus seres queridos</h1>
+            <a href="#regalos">VER MÁS</a>
+          </div>
+        </div>
+        <div class="col-lg-5 d-flex align-items-center justify-content-center header-img-container">
+          <img class="header-img header-img-ver" src="src\images\regalos\regalos2.jpg" alt="">
+          <img class="back-img" src="src\images\picture-back-1.png" alt="">
+          <img class="front-img" src="src\images\picture-front-1.png" alt="">
+        </div>
+      </div>
+
+      <div class="row justify-content-around header-row" style="display: none;">
+        <div class="col-lg-5 align-self-end">
+          <div class="header-heading">
+            <h1>El mejor regalo para los que mas quieres</h1>
+            <a href="#regalos">VER MÁS</a>
+          </div>
+        </div>
+        <div class="col-lg-5 d-flex align-items-center justify-content-center">
+          <img class="header-img header-img-sqr" src="src\images\regalos\regalos4.jpg" alt="">
+          <img class="back-img" src="src\images\picture-back-1.png" alt="">
+          <img class="front-img" src="src\images\picture-front-1.png" alt="">
+        </div>
+      </div>
+
+      <div class="row justify-content-around header-row" style="display: none;">
+        <div class="col-lg-5 align-self-end">
+          <div class="header-heading">
+            <h1>Personalizamos los regalos para ti</h1>
+            <a href="#regalos">VER MÁS</a>
+          </div>
+        </div>
+        <div class="col-lg-5 d-flex align-items-center justify-content-center">
+          <img class="header-img header-img-sqr" src="src\images\regalos\regalos3.jpg" alt="">
+          <img class="back-img" src="src\images\picture-back-1.png" alt="">
+          <img class="front-img" src="src\images\picture-front-1.png" alt="">
+        </div>
+      </div>
+
+      <!--Carousel Control-->
+      <div class="carousel-control-set d-flex justify-content-center align-items-end">
+        <div class="carousel-control no-pointer">
+          <div class="carousel-control-circle carousel-control-circle-filled"></div>
+        </div>
+        <div class="carousel-control carousel-control-hover">
+          <div class="carousel-control-circle"></div>
+        </div>
+        <div class="carousel-control carousel-control-hover">
+          <div class="carousel-control-circle"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!--==========================-Main sections============================-->
+  <section>
+    <div data-aos="" class="container px-4 pl-lg-5 main-section-container" id="regalos">
+      <div class="row justify-content-center">
+        <div class="col-lg-5 d-flex align-items-center">
+          <div data-aos="fade-up">
+            <h2>Regalos</h2>
+            <h1>Creamos el regalo perfecto para tus seres queridos</h1>
+            <div class="row">
+              <div class="bttn bttn-primary" id="regalosButton">Ver diseños</div>
+              <a target="_blank" href="https://api.whatsapp.com/send?phone=573003003030&text=Hola!%20Quisiera%20mas%20informacion%20sobre..." class="bttn bttn-secondary">Contáctanos <i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+          <img src="src\images\regalos\regalos8-blurred.jpg" data-src="src\images\regalos\regalos8.jpg" class="middle-img d-none d-lg-block fix-bug-fast-scroll" id="middleImg1" alt="gift">
+        </div>
+        <div class="col-lg-7 order-first pr-lg-5">
+          <img src="src\images\regalos\regalos6-blurred.jpg" data-src="src\images\regalos\regalos6.jpg" class="img-main fix-bug-fast-scroll" id="mainImg1" alt="gift">
+          <img src="src\images\fondo-fotos-main-blurred.png" data-src="src\images\fondo-fotos-main.png" class="back-img d-none d-lg-block fix-bug-fast-scroll" id="backImg1" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div data-aos="" class="container px-4 pr-lg-5 main-section-container" id="tarjetas">
+      <div class="row justify-content-center">
+        <div class="col-lg-5 d-flex align-items-center">
+          <div data-aos="fade-up">
+            <h2>Tarjetas</h2>
+            <h1>Los mejores eventos comienzan con una buena invitación</h1>
+            <div class="row">
+              <div class="bttn bttn-primary" id="tarjetasButton">Ver diseños</div>
+              <a target="_blank" href="https://api.whatsapp.com/send?phone=573003003030&text=Hola!%20Quisiera%20mas%20informacion%20sobre..." class="bttn bttn-secondary">Contáctanos <i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+          <img src="src\images\tarjetas\tarjetas4-blurred.jpg" data-src="src\images\tarjetas\tarjetas4.jpg" class="middle-img d-none d-lg-block" id="middleImg2" alt="gift">
+        </div>
+        <div class="col-lg-7 order-first order-lg-last pl-lg-5">
+          <img src="src\images\tarjetas\tarjetas5-blurred.jpg" data-src="src\images\tarjetas\tarjetas5.jpg" class="img-main" id="mainImg2" alt="gift">
+          <img src="src\images\fondo-fotos-main-2-blurred.png" data-src="src\images\fondo-fotos-main-2.png" class="back-img d-none d-lg-block" id="backImg2" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div data-aos="" class="container px-4 pl-lg-5 main-section-container" id="branding">
+      <div class="row justify-content-center">
+        <div class="col-lg-5 d-flex align-items-center">
+          <div data-aos="fade-up">
+            <h2>Branding</h2>
+            <h1>La imagen es lo primero que ven tus clientes</h1>
+            <div class="row">
+              <div class="bttn bttn-primary" id="brandingButton">Ver diseños</div>
+              <a target="_blank" href="https://api.whatsapp.com/send?phone=573003003030&text=Hola!%20Quisiera%20mas%20informacion%20sobre..." class="bttn bttn-secondary">Contáctanos <i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7 order-first pr-lg-5">
+          <img src="src\images\branding\branding1-blurred.jpg" data-src="src\images\branding\branding1.jpg" class="img-main" id="mainImg3" alt="gift">
+          <img src="src\images\fondo-fotos-main-blurred.png" data-src="src\images\fondo-fotos-main.png" class="back-img d-none d-lg-block" id="backImg3" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!--============================Gallery============================-->
+  <section>
+    <div id="scrim-circle"></div>
+    </div>
+    <div class="gallery-container" style="display: none;">
+      <div id="close-area-gallery"></div>
+      <div class="close-button" id="close-button-gallery">
+        <i class="fas fa-times-circle"></i>
+      </div>
+
+      <!--Regalos Gallery-->
+      <div class="row justify-content-center" id="regalosGallery" style="display: none;">
+        <div class="col-lg-4">
+          <div class="gallery-img-container animate__animated animate__fadeInUp">
+            <img src="src\images\regalos\regalos2-blurred.jpg" src-data="src\images\regalos\regalos2.jpg" class="gallery-img" alt="gift">
+            <div class="gallery-img-overlay"></div>
+          </div>
+          <div class="gallery-img-container animate__animated animate__fadeInUp">
+            <img src="src\images\regalos\regalos3-blurred.jpg" src-data="src\images\regalos\regalos3.jpg" class="gallery-img" alt="gift">
+            <div class="gallery-img-overlay"></div>
+          </div>
+          <div class="gallery-img-container animate__animated animate__fadeInUp">
+            <img src="src\images\regalos\regalos1-blurred.jpg" src-data="src\images\regalos\regalos1.jpg" class="gallery-img" alt="gift">
+            <div class="gallery-img-overlay"></div>
+          </div>
+          <div class="gallery-img-container animate__animated animate__fadeInUp">
+            <img src="src\images\regalos\regalos5-blurred.jpg" src-data="src\images\regalos\regalos5.jpg" class="gallery-img" alt="gift">
+            <div class="gallery-img-overlay"></div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="gallery-img-container animate__animated animate__fadeInUp">
+            <img src="src\images\regalos\regalos4-blurred.jpg" src-data="src\images\regalos\regalos4.jpg" class="gallery-img" alt="gift">
+            <div class="gallery-img-overlay"></div>
+          </div>
+          <div class="gallery-img-container animate__animated animate__fadeInUp">
+            <img src="src\images\regalos\regalos6-blurred.jpg" src-data="src\images\regalos\regalos6.jpg" class="gallery-img" alt="gift">
+            <div class="gallery-img-overlay"></div>
+          </div>
+          <div class="gallery-img-container animate__animated animate__fadeInUp">
+            <img src="src\images\regalos\regalos7-blurred.jpg" src-data="src\images\regalos\regalos7.jpg" class="gallery-img" alt="gift">
+            <div class="gallery-img-overlay"></div>
+          </div>
+          <div class="gallery-img-container animate__animated animate__fadeInUp">
+            <img src="src\images\regalos\regalos8-blurred.jpg" src-data="src\images\regalos\regalos8.jpg" class="gallery-img" alt="gift">
+            <div class="gallery-img-overlay"></div>
+          </div>
+        </div>
+      </div>
+
+      <!--Tarjetas Gallery-->
+      <div class="row justify-content-center" id="tarjetasGallery" style="display: none;">
+        <div class="col-lg-4">
+          <div class="gallery-img-container animate__animated animate__fadeInUp">
+            <img src="src\images\tarjetas\tarjetas8-blurred.jpg" src-data="src\images\tarjetas\tarjetas8.jpg" class="gallery-img" alt="gift">
+            <div class="gallery-img-overlay"></div>
+          </div>
+          <div class="gallery-img-container animate__animated animate__fadeInUp">
+            <img src="src\images\tarjetas\tarjetas2-blurred.jpg" src-data="src\images\tarjetas\tarjetas2.jpg" class="gallery-img" alt="gift">
+            <div class="gallery-img-overlay"></div>
+          </div>
+          <div class="gallery-img-container animate__animated animate__fadeInUp">
+            <img src="src\images\tarjetas\tarjetas1-blurred.jpg" src-data="src\images\tarjetas\tarjetas1.jpg" class="gallery-img" alt="gift">
+            <div class="gallery-img-overlay"></div>
+          </div>
+          <div class="gallery-img-container animate__animated animate__fadeInUp">
+            <img src="src\images\tarjetas\tarjetas7-blurred.jpg" src-data="src\images\tarjetas\tarjetas7.jpg" class="gallery-img" alt="gift">
+            <div class="gallery-img-overlay"></div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="gallery-img-container animate__animated animate__fadeInUp">
+            <img src="src\images\tarjetas\tarjetas4-blurred.jpg" src-data="src\images\tarjetas\tarjetas4.jpg" class="gallery-img" alt="gift">
+            <div class="gallery-img-overlay"></div>
+          </div>
+          <div class="gallery-img-container animate__animated animate__fadeInUp">
+            <img src="src\images\tarjetas\tarjetas5-blurred.jpg" src-data="src\images\tarjetas\tarjetas5.jpg" class="gallery-img" alt="gift">
+            <div class="gallery-img-overlay"></div>
+          </div>
+          <div class="gallery-img-container animate__animated animate__fadeInUp">
+            <img src="src\images\tarjetas\tarjetas6-blurred.jpg" src-data="src\images\tarjetas\tarjetas6.jpg" class="gallery-img" alt="gift">
+            <div class="gallery-img-overlay"></div>
+          </div>
+          <div class="gallery-img-container animate__animated animate__fadeInUp">
+            <img src="src\images\tarjetas\tarjetas3-blurred.jpg" src-data="src\images\tarjetas\tarjetas3.jpg" class="gallery-img" alt="gift">
+            <div class="gallery-img-overlay"></div>
+          </div>
+        </div>
+      </div>
+
+      <!--Branding Gallery-->
+      <div class="row justify-content-center" id="brandingGallery" style="display: none;">
+        <div class="col-lg-4">
+          <div class="gallery-img-container animate__animated animate__fadeInUp">
+            <img src="src\images\branding\branding1-blurred.jpg" src-data="src\images\branding\branding1.jpg" class="gallery-img" alt="gift">
+            <div class="gallery-img-overlay"></div>
+          </div>
+          <div class="gallery-img-container animate__animated animate__fadeInUp">
+            <img src="src\images\branding\branding2-blurred.jpg" src-data="src\images\branding\branding2.jpg" class="gallery-img" alt="gift">
+            <div class="gallery-img-overlay"></div>
+          </div>
+          <div class="gallery-img-container animate__animated animate__fadeInUp">
+            <img src="src\images\branding\branding3-blurred.jpg" src-data="src\images\branding\branding3.jpg" class="gallery-img" alt="gift">
+            <div class="gallery-img-overlay"></div>
+          </div>
+          <div class="gallery-img-container animate__animated animate__fadeInUp">
+            <img src="src\images\branding\branding4-blurred.jpg" src-data="src\images\branding\branding4.jpg" class="gallery-img" alt="gift">
+            <div class="gallery-img-overlay"></div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="gallery-img-container animate__animated animate__fadeInUp">
+            <img src="src\images\branding\branding5-blurred.jpg" src-data="src\images\branding\branding5.jpg" class="gallery-img" alt="gift">
+            <div class="gallery-img-overlay"></div>
+          </div>
+          <div class="gallery-img-container animate__animated animate__fadeInUp">
+            <img src="src\images\branding\branding6-blurred.jpg" src-data="src\images\branding\branding6.jpg" class="gallery-img" alt="gift">
+            <div class="gallery-img-overlay"></div>
+          </div>
+          <div class="gallery-img-container animate__animated animate__fadeInUp">
+            <img src="src\images\branding\branding7-blurred.jpg" src-data="src\images\branding\branding7.jpg" class="gallery-img" alt="gift">
+            <div class="gallery-img-overlay"></div>
+          </div>
+          <div class="gallery-img-container animate__animated animate__fadeInUp">
+            <img src="src\images\branding\branding8-blurred.jpg" src-data="src\images\branding\branding8.jpg" class="gallery-img" alt="gift">
+            <div class="gallery-img-overlay"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Image Zoom-->
+    <div class="img-zoom-container" style="display: none;">
+      <div id="close-area-zoom"></div>
+      <div class="close-button" id="close-button-zoom">
+        <i class="fas fa-times-circle"></i>
+      </div>
+      <img src="" class="mx-auto img-zoom" alt="" style="display: none;">
+    </div>
+  </section>
+
+  <!--============================Footer============================-->
+  <footer>
+    <div class="container-fluid footer">
+      <img src="src\images\footer-logo.png" alt="">
+      <hr>
+      <p>Barranquilla - Colombia</p>
+      <br>
+      <p>Siguenos</p>
+      <div class="icons-container">
+        <a target="_blank" href="https://www.instagram.com/tallerdepapier/"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook-square"></i></a>
+        <a target="_blank" href="https://api.whatsapp.com/send?phone=573003003030&text=Hola!%20Quisiera%20mas%20informacion%20sobre..."><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
