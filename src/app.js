@@ -387,6 +387,9 @@ $(function() {
   if (typeof window.orientation != 'undefined') {
     $(".header-img-container").removeClass("justify-content-center");
 
+    //Hide caorusel controls
+    $(".carousel-control-set").hide();
+
     //Change images on mobile//
     $(".header-container .back-img").attr("src", "src\\images\\picture-back-1-mobile.png");
     $(".header-container .front-img").attr("src", "src\\images\\picture-front-1-mobile.png");
