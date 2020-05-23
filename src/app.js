@@ -107,6 +107,7 @@ $(function() {
   $(".nav-item").click(function() {
     $(".navbar-collapse").hasClass("show") && $(".navbar-collapse").removeClass("show");
     $("body").removeClass("noscroll");
+    $("#navbar-scrim").fadeToggle();
   });
   ////-End - Mobile - Hide navbar collapse when nav link is clicked-////
 
@@ -116,6 +117,7 @@ $(function() {
       $(window).scrollTop() < 25 && $(".navbar").removeClass("navbar-shadow");
     $(".navbar").hasClass("navbar-shadow-reverse") && $(".navbar").removeClass("navbar-shadow-reverse");
     $("body").toggleClass("noscroll");
+    $("#navbar-scrim").fadeToggle(); //Add scrim when collapse
   });
   ////-End - Mobile - Add shadow class to the navbar when press toggle button-////
   ////===End - Nav bar animations===////
