@@ -388,7 +388,7 @@ $(function() {
     $(".header-img-container").removeClass("justify-content-center");
 
     //Hide caorusel controls
-    $(".carousel-control-set").hide();
+    $(".carousel-control-set").hide().removeClass("d-flex");
 
     //Change images on mobile//
     $(".header-container .back-img").attr("src", "src\\images\\picture-back-1-mobile.png");
